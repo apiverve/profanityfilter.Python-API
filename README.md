@@ -1,7 +1,7 @@
 Profanity Filter API
 ============
 
-Profanity Filter is a simple tool for filtering out profanity words from a text. It returns the text with the profanity words replaced by asterisks.
+Profanity Filter is a simple tool for filtering out profanity words from a text. It returns the text with the profanity words replaced by placeholders.
 
 ![Build Status](https://img.shields.io/badge/build-passing-green)
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
@@ -47,7 +47,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-query = {  "text": "Today is so damn hot! Why the hell would anyone go outside?",  "mask": "*"}
+query = {  "text": "Today is so damn hot! Why the hell would anyone go outside?",  "mask": "*" }
 ```
 
 ###### Simple Request
@@ -71,10 +71,7 @@ print(result)
     "filteredText": "Today is so **** hot! Why the **** would anyone go outside?",
     "mask": "*",
     "trimmed": false,
-    "profaneWords": [
-      "damn",
-      "hell"
-    ]
+    "profaneWords": 2
   }
 }
 ```
