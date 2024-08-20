@@ -72,7 +72,8 @@ print(result)
     "mask": "*",
     "trimmed": false,
     "profaneWords": 2
-  }
+  },
+  "code": 200
 }
 ```
 
